@@ -62,7 +62,6 @@ robusteness of Louvain on multiple runs.
 cp / home / shared_brain / BrainCode / Louvain / Makefile . 
 make
 ```
-
 2. run multiple times
 ```
 cp / home / shared_brain / BrainCode / Louvain / multipleMakes .sh .
