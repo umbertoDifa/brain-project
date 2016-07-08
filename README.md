@@ -33,7 +33,7 @@ to understand the general flow.
 
 The manual pipeline can be automated with the following script.
 It is a script that combines the steps And can be started at any of the previous steps. Each of the above
-steps is encapsulated into a single script (ref.(#modular)) and then those scripts are concatenated to execute the whole pipeline.
+steps is encapsulated into a single script [()](#modular) and then those scripts are concatenated to execute the whole pipeline.
 The pipeline can be started at any point and it keeps going till the end, so if it is started at Louvain 
 than it also executes commdy and the statistics.
 
