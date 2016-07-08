@@ -24,7 +24,7 @@ Keep in mind that not all the scripts are optimized and none is tested, but they
  
  -[Generate Infomap images](#infomap-image)
 
-  -[Multiple commdy costs]#multiple-commdy-costs
+-[Multiple commdy costs](#multiple-commdy-costs)
 
 
 # pipeline-manual
@@ -93,16 +93,16 @@ source multipleMakes .sh
 
 Usually after multiple Louvain are run then also multiple commdy are run, a commdy for each run to test
 the robusteness of commdy on louvain runs.
-'''
+```
 source
 /home/shared_brain / BrainCode / helpers / pachyPipelineAutomation / multipleCommdy.sh
-'''
+```
 
 #louvain-images
 [louvainClustersImages.py](louvainClustersImages.py)
 
 The input is the folder with the louvain_comm files
-'''
+```
 python / home / shared_brain / BrainCode / Louvain / louvainClustersImages .py
 / home / shared_brain / Output / Young_vs_Old / Young_11 -15 -13 _brain_33 / Activation1
 ```
