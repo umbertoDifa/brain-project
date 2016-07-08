@@ -6,8 +6,8 @@ This software is provided 'as-is'.
 This repo contains a collection of scripts to analyze brain imaging data, in particular for fluorescence data.
 Keep in mind that not all the scripts are optimized and none is tested, but they all achived their purpose (untill now ;)) and most of them are commented , feel free to point out any bug and contribute.
 
-[Pipeline_Manual](#Pipeline_Manual) 
+[Pipeline_Manual](#pipeline-manual) 
 
-# Pipeline_Manual
+# pipeline-manual
 
 thingks
