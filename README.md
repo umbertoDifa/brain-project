@@ -57,14 +57,15 @@ costs parameters (by the way there is a script for that).
 This script runs Louvain multiple times for the same pair files. It has been used to test the
 robusteness of Louvain on multiple runs.
 
--run make once
+1. run make once
 ```
 cp / home / shared_brain / BrainCode / Louvain / Makefile . 
 make
 ```
 
--run multiple times
-```cp / home / shared_brain / BrainCode / Louvain / multipleMakes .sh .
+2. run multiple times
+```
+cp / home / shared_brain / BrainCode / Louvain / multipleMakes .sh .
 time source multipleMakes .sh
 ```
 
