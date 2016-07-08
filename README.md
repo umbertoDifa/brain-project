@@ -20,14 +20,14 @@ to understand the general flow.
 # pipeline-auto
 **pipeline.sh**
 
-*Usage:* /home/shared_brain/BrainCode/helpers/pachyPipelineAutomation/pipeline.sh # <pipeline starting point> <dataPath> <imagePath> <threshold> <window> <commdyCost>
+*Usage:*``` /home/shared_brain/BrainCode/helpers/pachyPipelineAutomation/pipeline.sh # <pipeline starting point> <dataPath> <imagePath> <threshold> <window> <commdyCost>```
 - dataPath : the folder with the input images
 - imagePath : the path where to store the images of correlation
 - correlation threshold : the correlation threshold
 - correlation window : the window used to compute correlations
 - commdyCosts : the costs used to run commdy
 
-*Usage example:* /home/shared_brain/BrainCode/helpers/pachyPipelineAutomation/pipeline.sh corr /home/shared_brain/Data/RS_PCB_Oil/PCB196RS/PCB_196_RS_Activation_2/ /home/shared_brain/Output/Images/RS_PCB_Oil/PCB_196_RS/Activation2/w50_cor.70/
+*Usage example:*``` /home/shared_brain/BrainCode/helpers/pachyPipelineAutomation/pipeline.sh corr /home/shared_brain/Data/RS_PCB_Oil/PCB196RS/PCB_196_RS_Activation_2/ /home/shared_brain/Output/Images/RS_PCB_Oil/PCB_196_RS/Activation2/w50_cor.70/```
 
 The manual pipeline can be automated with the following script.
 It is a script that combines the steps And can be started at any of the previous steps. Each of the above
