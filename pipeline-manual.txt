@@ -1,0 +1,41 @@
+#go in the output folder, it must exists. The image folder as well has to exists.
+
+screen
+
+export OMP_NUM_THREAD=20
+
+#lunch rename script, input files have to have a specific name convention
+python /home/shared_brain/BrainCode/helpers/renameFilesByNumber.py /home/shared_brain/Data/RS_PCB_Oil/PCB_78_RS/Oil124RS_Activation1
+
+#lunch corr script
+/home/shared_brain/BrainCode/cor_img 50 1 0 0.7 0 n /home/shared_brain/Data/RS_PCB_Oil/PCB60RS/Oil\ 184\ RS\ Activation\ 1 /home/shared_brain/Output/Images/RS_PCB_Oil/Oil184RS/Activation1/w50_cor.70
+
+#split the pair file
+/home/shared_brain/BrainCode/Louvain/split_files.py cor_weights_cor70.pair
+
+#copy the make file
+cp /home/shared_brain/BrainCode/Louvain/Makefile .
+
+#remove small files!
+
+#louvain
+make
+
+#commdy1
+/home/shared_brain/BrainCode/commdy/script/ipc-gams.py louvain.gtm
+
+#commdy2
+/home/shared_brain/BrainCode/commdy/script/gamsout2color.py louvain.gtm louvain_ipc.out > louvain_ipc.gcolor
+
+#commdy3
+/home/shared_brain/BrainCode/commdy/src/color_ind2 -cost 111 louvain.gtm <louvain_ipc.gcolor >louvain_ipc-c111.color2
+
+#Rscript
+Rscript /home/shared_brain/BrainCode/Rstatistics/brainStats.R
+
+
+
+
+
+
+
