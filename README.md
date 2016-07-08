@@ -33,7 +33,7 @@ to understand the general flow.
 
 The manual pipeline can be automated with the following script.
 It is a script that combines the steps And can be started at any of the previous steps. Each of the above
-steps is encapsulated into a single script and then those scripts are concatenated to execute the whole pipeline.
+steps is encapsulated into a single script (ref.(#modular)) and then those scripts are concatenated to execute the whole pipeline.
 The pipeline can be started at any point and it keeps going till the end, so if it is started at Louvain 
 than it also executes commdy and the statistics.
 
@@ -43,7 +43,7 @@ script and the modular script which are used by the pipeline but can also be use
 easy to use and commented and can be used as subroutines for other scripts such as running commdy for several
 costs parameters (by the way there is a script for that).
 
--**[correlationScript](/pachyPipelineAutomation/correlationScript)** used to run the correlation algorithm
--**louvainScript** used to run the correlation algorithm
--**commdyScript** runs commdy
--**statisticsScripts** runs the statistics
+-[correlationScript](/pachyPipelineAutomation/correlationScript.sh) used to run the correlation algorithm
+-[louvainScript](/pachyPipelineAutomation/louvainScript.sh) used to run the correlation algorithm
+-[commdyScript](/pachyPipelineAutomation/commdyScript.sh) runs commdy
+-[statisticsScripts](/pachyPipelineAutomation/statisticsScript.sh) runs the statistics
