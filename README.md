@@ -7,7 +7,9 @@ This repo contains a collection of scripts to analyze brain imaging data, in par
 Keep in mind that not all the scripts are optimized and none is tested, but they all achived their purpose (untill now ;)) and most of them are commented , feel free to point out any bug and contribute.
 
 -[Pipeline Manual](#pipeline-manual) 
+
 -[Pipeline Auto](#pipeline-auto) 
+
 -[Modular Scripts](#modular) 
 
 
@@ -20,7 +22,7 @@ to understand the general flow.
 
 
 # pipeline-auto
-**pipeline.sh**
+[pipeline.sh](pipeline.sh)
 
 *Usage:*``` /home/shared_brain/BrainCode/helpers/pachyPipelineAutomation/pipeline.sh # <pipeline starting point> <dataPath> <imagePath> <threshold> <window> <commdyCost>```
 - dataPath : the folder with the input images
@@ -44,8 +46,11 @@ easy to use and commented and can be used as subroutines for other scripts such 
 costs parameters (by the way there is a script for that).
 
 -[correlationScript](/pachyPipelineAutomation/correlationScript.sh) used to run the correlation algorithm.
+
 -[louvainScript](/pachyPipelineAutomation/louvainScript.sh) used to run the correlation algorithm.
+
 -[commdyScript](/pachyPipelineAutomation/commdyScript.sh) runs commdy.
+
 -[statisticsScripts](/pachyPipelineAutomation/statisticsScript.sh) runs the statistics.
 
 # multipleMakes
@@ -53,16 +58,19 @@ This script runs Louvain multiple times for the same pair files. It has been use
 robusteness of Louvain on multiple runs.
 
 -run make once
-```cp / home / shared_brain / BrainCode / Louvain / Makefile . 
+```
+cp / home / shared_brain / BrainCode / Louvain / Makefile . 
 make
 ```
+
 -run multiple times
 ```cp / home / shared_brain / BrainCode / Louvain / multipleMakes .sh .
 time source multipleMakes .sh
 ```
 
 -Alternative : one liner
-```cp / home / shared_brain / BrainCode / Louvain / Makefile . && make && cp
+```
+cp / home / shared_brain / BrainCode / Louvain / Makefile . && make && cp
 / home / shared_brain / BrainCode / Louvain / multipleMakes .sh . && time
 source multipleMakes .sh
 ```
