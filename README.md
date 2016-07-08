@@ -58,15 +58,15 @@ This script runs Louvain multiple times for the same pair files. It has been use
 robusteness of Louvain on multiple runs.
 
 1. run make once
-⋅⋅```
-⋅⋅cp / home / shared_brain / BrainCode / Louvain / Makefile . 
-⋅⋅make
-⋅⋅```
+```
+cp / home / shared_brain / BrainCode / Louvain / Makefile . 
+make
+```
 2. run multiple times
-⋅⋅```
-⋅⋅cp / home / shared_brain / BrainCode / Louvain / multipleMakes .sh .
-⋅⋅time source multipleMakes .sh
-⋅⋅```
+```
+cp / home / shared_brain / BrainCode / Louvain / multipleMakes .sh .
+time source multipleMakes .sh
+```
 
 -Alternative : one liner
 ```
