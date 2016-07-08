@@ -8,6 +8,8 @@ Keep in mind that not all the scripts are optimized and none is tested, but they
 
 [Pipeline Manual](#pipeline-manual) 
 [Pipeline Auto](#pipeline-auto) 
+[Modular Scripts](#modular) 
+
 
 # pipeline-manual
 
@@ -34,3 +36,14 @@ It is a script that combines the steps And can be started at any of the previous
 steps is encapsulated into a single script and then those scripts are concatenated to execute the whole pipeline.
 The pipeline can be started at any point and it keeps going till the end, so if it is started at Louvain 
 than it also executes commdy and the statistics.
+
+# modular
+Keep in mind that in the folder BrainCode/helpers/pachyPipelineAutomation there is both the pipeline.sh
+script and the modular script which are used by the pipeline but can also be used alone. Those script are very
+easy to use and commented and can be used as subroutines for other scripts such as running commdy for several
+costs parameters (by the way there is a script for that).
+
+-**[correlationScript](/pachyPipelineAutomation/correlationScript)** used to run the correlation algorithm
+-**louvainScript** used to run the correlation algorithm
+-**commdyScript** runs commdy
+-**statisticsScripts** runs the statistics
