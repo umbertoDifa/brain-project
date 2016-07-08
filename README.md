@@ -12,8 +12,11 @@ Keep in mind that not all the scripts are optimized and none is tested, but they
 # pipeline-manual
 
 **pipeline-manual.txt** 
+
 This is not an executable, but it shows each of the command needed to execute the pipeline manually. It can be useful to check it out
 to understand the general flow.
+
+======
 
 # pipeline-auto
 **pipeline.sh**
