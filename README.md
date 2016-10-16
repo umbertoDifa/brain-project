@@ -73,19 +73,19 @@ robusteness of Louvain on multiple runs.
 
 1- run make once
 ```
-cp / home / shared_brain / BrainCode / Louvain / Makefile . 
+cp /home/shared_brain/BrainCode/Louvain/Makefile . 
 make
 ```
 2- run multiple times
 ```
-cp / home / shared_brain / BrainCode / Louvain / multipleMakes .sh .
+cp /home/shared_brain/BrainCode/Louvain/multipleMakes.sh .
 time source multipleMakes .sh
 ```
 
 -Alternative : one liner
 ```
-cp / home / shared_brain / BrainCode / Louvain / Makefile . && make && cp
-/ home / shared_brain / BrainCode / Louvain / multipleMakes .sh . && time
+cp /home/shared_brain/BrainCode/Louvain/Makefile . && make && cp
+/home/shared_brain/BrainCode/Louvain/multipleMakes.sh . && time
 source multipleMakes .sh
 ```
 
@@ -95,7 +95,7 @@ Usually after multiple Louvain are run then also multiple commdy are run, a comm
 the robusteness of commdy on louvain runs.
 ```
 source
-/home/shared_brain / BrainCode / helpers / pachyPipelineAutomation / multipleCommdy.sh
+/home/shared_brain/BrainCode/helpers/pachyPipelineAutomation/multipleCommdy.sh
 ```
 
 #louvain-images
@@ -103,8 +103,8 @@ source
 
 The input is the folder with the louvain_comm files
 ```
-python / home / shared_brain / BrainCode / Louvain / louvainClustersImages .py
-/ home / shared_brain / Output / Young_vs_Old / Young_11 -15 -13 _brain_33 / Activation1
+python /home/shared_brain/BrainCode/Louvain/louvainClustersImages.py
+/home/shared_brain/Output/Young_vs_Old/Young_11-15-13_brain_33/Activation1
 ```
 
 #commdy-images
@@ -113,16 +113,16 @@ python / home / shared_brain / BrainCode / Louvain / louvainClustersImages .py
 #infomap
 -Single , just run on a single file
 ```
-/ home / shared_brain / BrainCode / infoMap / Infomap / Infomap --tree --map --clu
---input - format link - list <fileName > < outputFolderThatMustExists >
+/home/shared_brain/BrainCode/infoMap/Infomap/Infomap --tree --map --clu
+--input-format link-list <fileName > < outputFolderThatMustExists >
 ```
 
 -Multiple , run for each pair file in the folder
 ```
 mkdir resultInfomap
 for i in *. pair ; do
-/ home / shared_brain / BrainCode / infoMap / Infomap / Infomap --tree --map
---clu --input - format link - list $i resultInfomap ; done
+/home/shared_brain/BrainCode/infoMap/Infomap/Infomap --tree --map
+--clu --input-format link-list $i resultInfomap ; done
 ```
 
 #infomap-image
@@ -139,6 +139,6 @@ Also notice how this scripts uses the pipeline.sh script as subroutine.
 
 Go in the folder with the pair files , usually the core folder
 ```
-cd / home / shared_brain / Output / Young_vs_Old / Young_11 -09 -13 _brain_39 / Activation3 / w50_cor .70/ core
-time python / home / shared_brain / BrainCode / helpers / multipleCostsCommdy .py
+cd /home/shared_brain/Output/Young_vs_Old/Young_11-09-13_brain_39/Activation3/w50_cor.70/core
+time python /home/shared_brain/BrainCode/helpers/multipleCostsCommdy.py
 ```
