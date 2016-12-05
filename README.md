@@ -108,7 +108,7 @@ python /home/shared_brain/BrainCode/Louvain/louvainClustersImages.py
 ```
 
 #commdy-images
-[louvainClustersImages.py](commdyToImage.py)
+[commdyToImage.py](commdyToImage.py)
 
 #infomap
 -Single , just run on a single file
